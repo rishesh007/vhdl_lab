@@ -1,0 +1,36 @@
+|decoder_3_8
+I[0] => Equal0.IN0
+I[0] => Equal1.IN0
+I[0] => Equal2.IN1
+I[0] => Equal3.IN0
+I[0] => Equal4.IN1
+I[0] => Equal5.IN0
+I[0] => Equal6.IN2
+I[0] => Equal7.IN0
+I[1] => Equal0.IN1
+I[1] => Equal1.IN1
+I[1] => Equal2.IN0
+I[1] => Equal3.IN1
+I[1] => Equal4.IN2
+I[1] => Equal5.IN2
+I[1] => Equal6.IN0
+I[1] => Equal7.IN1
+I[2] => Equal0.IN2
+I[2] => Equal1.IN2
+I[2] => Equal2.IN2
+I[2] => Equal3.IN2
+I[2] => Equal4.IN0
+I[2] => Equal5.IN1
+I[2] => Equal6.IN1
+I[2] => Equal7.IN2
+En => ~NO_FANOUT~
+y[0] <= Equal7.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y~27.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y~26.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= y~25.DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= y~24.DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= y~23.DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= y~22.DB_MAX_OUTPUT_PORT_TYPE
+y[7] <= y~21.DB_MAX_OUTPUT_PORT_TYPE
+
+

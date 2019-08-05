@@ -1,0 +1,16 @@
+|mux
+i1 => y~1.IN1
+i2 => y~3.IN1
+i3 => y~6.IN1
+i4 => y~9.IN1
+s1 => y~8.IN0
+s1 => y~5.IN0
+s1 => y~2.IN0
+s1 => y~0.IN0
+s2 => y~8.IN1
+s2 => y~2.IN1
+s2 => y~5.IN1
+s2 => y~0.IN1
+y <= y~10.DB_MAX_OUTPUT_PORT_TYPE
+
+

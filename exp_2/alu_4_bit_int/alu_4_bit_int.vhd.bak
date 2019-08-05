@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_1164.all;
+
+Entity alu_4_bit_int is
+port (A,B: in integer range 0 to 3;
+	  s: in std_logic_vector(2 downto 0);
+	  y: out integer range 0 to 3);
+end alu_4_bit_int;
+
+Architecture dataflow of alu_4_bit_int is
+begin
+	with s select
+		y <= A + B when "000",
+			 A - B when "001",
+			 A sra 3 when "010",
+			 A * B when "011",
+			 A / B when "100",
+			 A mod B when "101",
+			 A ** 2 when "110",
+			 2 ** B when "111",
+			 0 when others;
+end dataflow ;

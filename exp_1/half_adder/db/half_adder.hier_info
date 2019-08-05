@@ -1,0 +1,9 @@
+|half_adder
+a => c~0.IN0
+a => s~0.IN0
+b => c~0.IN1
+b => s~0.IN1
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
