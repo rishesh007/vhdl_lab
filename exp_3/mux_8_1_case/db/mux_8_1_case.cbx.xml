@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="mux_8_1_case">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mux_8_1_case|lpm_mux:Mux0" CBX_FILE_NAME="mux_cqc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

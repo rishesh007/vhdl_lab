@@ -1,0 +1,16 @@
+|mux_8_1_case
+y <= y~0.DB_MAX_OUTPUT_PORT_TYPE
+En => y~0.OUTPUTSELECT
+s[0] => Mux0.IN2
+s[1] => Mux0.IN1
+s[2] => Mux0.IN0
+I[0] => Mux0.IN10
+I[1] => Mux0.IN9
+I[2] => Mux0.IN8
+I[3] => Mux0.IN7
+I[4] => Mux0.IN6
+I[5] => Mux0.IN5
+I[6] => Mux0.IN4
+I[7] => Mux0.IN3
+
+

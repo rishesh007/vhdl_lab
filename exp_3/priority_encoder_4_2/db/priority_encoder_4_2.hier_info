@@ -1,0 +1,13 @@
+|priority_encoder_4_2
+I[0] => ~NO_FANOUT~
+I[1] => y~0.DATAA
+I[2] => y~1.DATAA
+I[2] => y~0.OUTPUTSELECT
+I[3] => y~2.OUTPUTSELECT
+I[3] => y~1.OUTPUTSELECT
+En => y~4.OUTPUTSELECT
+En => y~3.OUTPUTSELECT
+y[0] <= y~4.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
