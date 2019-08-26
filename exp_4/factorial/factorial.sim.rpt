@@ -1,0 +1,442 @@
+Simulator report for factorial
+Mon Aug 26 05:10:54 2019
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 279 nodes    ;
+; Simulation Coverage         ;      99.64 % ;
+; Total Number of Transitions ; 30816        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      99.64 % ;
+; Total nodes checked                                 ; 279          ;
+; Total output ports checked                          ; 279          ;
+; Total output ports with complete 1/0-value coverage ; 278          ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 1            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                            ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |factorial|process_0~0   ; |factorial|process_0~0   ; out0             ;
+; |factorial|process_0~1   ; |factorial|process_0~1   ; out0             ;
+; |factorial|process_0~2   ; |factorial|process_0~2   ; out              ;
+; |factorial|process_0~3   ; |factorial|process_0~3   ; out              ;
+; |factorial|process_0~4   ; |factorial|process_0~4   ; out0             ;
+; |factorial|process_0~5   ; |factorial|process_0~5   ; out              ;
+; |factorial|process_0~6   ; |factorial|process_0~6   ; out              ;
+; |factorial|process_0~7   ; |factorial|process_0~7   ; out              ;
+; |factorial|process_0~8   ; |factorial|process_0~8   ; out0             ;
+; |factorial|process_0~9   ; |factorial|process_0~9   ; out              ;
+; |factorial|process_0~10  ; |factorial|process_0~10  ; out              ;
+; |factorial|process_0~11  ; |factorial|process_0~11  ; out              ;
+; |factorial|process_0~12  ; |factorial|process_0~12  ; out              ;
+; |factorial|process_0~13  ; |factorial|process_0~13  ; out0             ;
+; |factorial|process_0~14  ; |factorial|process_0~14  ; out              ;
+; |factorial|process_0~15  ; |factorial|process_0~15  ; out              ;
+; |factorial|process_0~16  ; |factorial|process_0~16  ; out              ;
+; |factorial|process_0~17  ; |factorial|process_0~17  ; out              ;
+; |factorial|process_0~18  ; |factorial|process_0~18  ; out              ;
+; |factorial|process_0~19  ; |factorial|process_0~19  ; out              ;
+; |factorial|process_0~20  ; |factorial|process_0~20  ; out              ;
+; |factorial|process_0~21  ; |factorial|process_0~21  ; out0             ;
+; |factorial|process_0~22  ; |factorial|process_0~22  ; out              ;
+; |factorial|process_0~23  ; |factorial|process_0~23  ; out              ;
+; |factorial|process_0~24  ; |factorial|process_0~24  ; out              ;
+; |factorial|process_0~25  ; |factorial|process_0~25  ; out              ;
+; |factorial|process_0~26  ; |factorial|process_0~26  ; out              ;
+; |factorial|process_0~27  ; |factorial|process_0~27  ; out              ;
+; |factorial|process_0~28  ; |factorial|process_0~28  ; out              ;
+; |factorial|process_0~29  ; |factorial|process_0~29  ; out              ;
+; |factorial|process_0~30  ; |factorial|process_0~30  ; out0             ;
+; |factorial|process_0~31  ; |factorial|process_0~31  ; out              ;
+; |factorial|process_0~32  ; |factorial|process_0~32  ; out              ;
+; |factorial|process_0~33  ; |factorial|process_0~33  ; out              ;
+; |factorial|process_0~34  ; |factorial|process_0~34  ; out              ;
+; |factorial|process_0~35  ; |factorial|process_0~35  ; out              ;
+; |factorial|process_0~36  ; |factorial|process_0~36  ; out              ;
+; |factorial|process_0~37  ; |factorial|process_0~37  ; out              ;
+; |factorial|process_0~38  ; |factorial|process_0~38  ; out              ;
+; |factorial|process_0~39  ; |factorial|process_0~39  ; out              ;
+; |factorial|process_0~40  ; |factorial|process_0~40  ; out              ;
+; |factorial|process_0~41  ; |factorial|process_0~41  ; out0             ;
+; |factorial|process_0~42  ; |factorial|process_0~42  ; out              ;
+; |factorial|process_0~43  ; |factorial|process_0~43  ; out              ;
+; |factorial|process_0~44  ; |factorial|process_0~44  ; out              ;
+; |factorial|process_0~45  ; |factorial|process_0~45  ; out              ;
+; |factorial|process_0~46  ; |factorial|process_0~46  ; out              ;
+; |factorial|process_0~47  ; |factorial|process_0~47  ; out              ;
+; |factorial|process_0~48  ; |factorial|process_0~48  ; out              ;
+; |factorial|process_0~49  ; |factorial|process_0~49  ; out              ;
+; |factorial|process_0~50  ; |factorial|process_0~50  ; out              ;
+; |factorial|process_0~51  ; |factorial|process_0~51  ; out              ;
+; |factorial|process_0~52  ; |factorial|process_0~52  ; out              ;
+; |factorial|process_0~53  ; |factorial|process_0~53  ; out              ;
+; |factorial|process_0~54  ; |factorial|process_0~54  ; out              ;
+; |factorial|process_0~55  ; |factorial|process_0~55  ; out0             ;
+; |factorial|process_0~56  ; |factorial|process_0~56  ; out              ;
+; |factorial|process_0~57  ; |factorial|process_0~57  ; out              ;
+; |factorial|process_0~58  ; |factorial|process_0~58  ; out              ;
+; |factorial|process_0~59  ; |factorial|process_0~59  ; out              ;
+; |factorial|process_0~60  ; |factorial|process_0~60  ; out              ;
+; |factorial|process_0~61  ; |factorial|process_0~61  ; out              ;
+; |factorial|process_0~62  ; |factorial|process_0~62  ; out              ;
+; |factorial|process_0~63  ; |factorial|process_0~63  ; out              ;
+; |factorial|process_0~64  ; |factorial|process_0~64  ; out              ;
+; |factorial|process_0~65  ; |factorial|process_0~65  ; out              ;
+; |factorial|process_0~66  ; |factorial|process_0~66  ; out              ;
+; |factorial|process_0~67  ; |factorial|process_0~67  ; out              ;
+; |factorial|process_0~68  ; |factorial|process_0~68  ; out              ;
+; |factorial|process_0~69  ; |factorial|process_0~69  ; out              ;
+; |factorial|process_0~70  ; |factorial|process_0~70  ; out              ;
+; |factorial|process_0~71  ; |factorial|process_0~71  ; out0             ;
+; |factorial|process_0~72  ; |factorial|process_0~72  ; out              ;
+; |factorial|process_0~73  ; |factorial|process_0~73  ; out              ;
+; |factorial|process_0~74  ; |factorial|process_0~74  ; out              ;
+; |factorial|process_0~75  ; |factorial|process_0~75  ; out              ;
+; |factorial|process_0~76  ; |factorial|process_0~76  ; out              ;
+; |factorial|process_0~77  ; |factorial|process_0~77  ; out              ;
+; |factorial|process_0~78  ; |factorial|process_0~78  ; out              ;
+; |factorial|process_0~79  ; |factorial|process_0~79  ; out              ;
+; |factorial|process_0~80  ; |factorial|process_0~80  ; out              ;
+; |factorial|process_0~81  ; |factorial|process_0~81  ; out              ;
+; |factorial|process_0~82  ; |factorial|process_0~82  ; out              ;
+; |factorial|process_0~83  ; |factorial|process_0~83  ; out              ;
+; |factorial|process_0~84  ; |factorial|process_0~84  ; out              ;
+; |factorial|process_0~85  ; |factorial|process_0~85  ; out              ;
+; |factorial|process_0~86  ; |factorial|process_0~86  ; out              ;
+; |factorial|process_0~87  ; |factorial|process_0~87  ; out              ;
+; |factorial|process_0~88  ; |factorial|process_0~88  ; out              ;
+; |factorial|process_0~89  ; |factorial|process_0~89  ; out              ;
+; |factorial|process_0~90  ; |factorial|process_0~90  ; out0             ;
+; |factorial|process_0~91  ; |factorial|process_0~91  ; out              ;
+; |factorial|process_0~92  ; |factorial|process_0~92  ; out              ;
+; |factorial|process_0~93  ; |factorial|process_0~93  ; out              ;
+; |factorial|process_0~94  ; |factorial|process_0~94  ; out              ;
+; |factorial|process_0~95  ; |factorial|process_0~95  ; out              ;
+; |factorial|process_0~96  ; |factorial|process_0~96  ; out              ;
+; |factorial|process_0~97  ; |factorial|process_0~97  ; out              ;
+; |factorial|process_0~98  ; |factorial|process_0~98  ; out              ;
+; |factorial|process_0~99  ; |factorial|process_0~99  ; out              ;
+; |factorial|process_0~100 ; |factorial|process_0~100 ; out              ;
+; |factorial|process_0~101 ; |factorial|process_0~101 ; out              ;
+; |factorial|process_0~102 ; |factorial|process_0~102 ; out              ;
+; |factorial|process_0~103 ; |factorial|process_0~103 ; out              ;
+; |factorial|process_0~104 ; |factorial|process_0~104 ; out              ;
+; |factorial|process_0~105 ; |factorial|process_0~105 ; out              ;
+; |factorial|process_0~106 ; |factorial|process_0~106 ; out              ;
+; |factorial|process_0~107 ; |factorial|process_0~107 ; out              ;
+; |factorial|process_0~108 ; |factorial|process_0~108 ; out              ;
+; |factorial|process_0~109 ; |factorial|process_0~109 ; out              ;
+; |factorial|process_0~110 ; |factorial|process_0~110 ; out              ;
+; |factorial|process_0~111 ; |factorial|process_0~111 ; out0             ;
+; |factorial|process_0~112 ; |factorial|process_0~112 ; out              ;
+; |factorial|process_0~113 ; |factorial|process_0~113 ; out              ;
+; |factorial|process_0~114 ; |factorial|process_0~114 ; out              ;
+; |factorial|process_0~115 ; |factorial|process_0~115 ; out              ;
+; |factorial|process_0~116 ; |factorial|process_0~116 ; out              ;
+; |factorial|process_0~117 ; |factorial|process_0~117 ; out              ;
+; |factorial|process_0~118 ; |factorial|process_0~118 ; out              ;
+; |factorial|process_0~119 ; |factorial|process_0~119 ; out              ;
+; |factorial|process_0~120 ; |factorial|process_0~120 ; out              ;
+; |factorial|process_0~121 ; |factorial|process_0~121 ; out              ;
+; |factorial|process_0~122 ; |factorial|process_0~122 ; out              ;
+; |factorial|process_0~123 ; |factorial|process_0~123 ; out              ;
+; |factorial|process_0~124 ; |factorial|process_0~124 ; out              ;
+; |factorial|process_0~125 ; |factorial|process_0~125 ; out              ;
+; |factorial|process_0~126 ; |factorial|process_0~126 ; out              ;
+; |factorial|process_0~127 ; |factorial|process_0~127 ; out              ;
+; |factorial|process_0~128 ; |factorial|process_0~128 ; out              ;
+; |factorial|process_0~129 ; |factorial|process_0~129 ; out              ;
+; |factorial|process_0~130 ; |factorial|process_0~130 ; out              ;
+; |factorial|process_0~131 ; |factorial|process_0~131 ; out              ;
+; |factorial|process_0~132 ; |factorial|process_0~132 ; out              ;
+; |factorial|process_0~133 ; |factorial|process_0~133 ; out              ;
+; |factorial|process_0~134 ; |factorial|process_0~134 ; out              ;
+; |factorial|process_0~135 ; |factorial|process_0~135 ; out0             ;
+; |factorial|process_0~136 ; |factorial|process_0~136 ; out              ;
+; |factorial|process_0~137 ; |factorial|process_0~137 ; out              ;
+; |factorial|process_0~138 ; |factorial|process_0~138 ; out              ;
+; |factorial|process_0~139 ; |factorial|process_0~139 ; out              ;
+; |factorial|process_0~140 ; |factorial|process_0~140 ; out              ;
+; |factorial|process_0~141 ; |factorial|process_0~141 ; out              ;
+; |factorial|process_0~142 ; |factorial|process_0~142 ; out              ;
+; |factorial|process_0~143 ; |factorial|process_0~143 ; out              ;
+; |factorial|process_0~144 ; |factorial|process_0~144 ; out              ;
+; |factorial|process_0~145 ; |factorial|process_0~145 ; out              ;
+; |factorial|process_0~146 ; |factorial|process_0~146 ; out              ;
+; |factorial|process_0~147 ; |factorial|process_0~147 ; out              ;
+; |factorial|process_0~148 ; |factorial|process_0~148 ; out              ;
+; |factorial|process_0~149 ; |factorial|process_0~149 ; out              ;
+; |factorial|process_0~150 ; |factorial|process_0~150 ; out              ;
+; |factorial|process_0~151 ; |factorial|process_0~151 ; out              ;
+; |factorial|process_0~152 ; |factorial|process_0~152 ; out              ;
+; |factorial|process_0~153 ; |factorial|process_0~153 ; out              ;
+; |factorial|process_0~154 ; |factorial|process_0~154 ; out              ;
+; |factorial|process_0~155 ; |factorial|process_0~155 ; out              ;
+; |factorial|process_0~156 ; |factorial|process_0~156 ; out              ;
+; |factorial|process_0~157 ; |factorial|process_0~157 ; out              ;
+; |factorial|process_0~158 ; |factorial|process_0~158 ; out              ;
+; |factorial|process_0~159 ; |factorial|process_0~159 ; out              ;
+; |factorial|process_0~160 ; |factorial|process_0~160 ; out              ;
+; |factorial|process_0~161 ; |factorial|process_0~161 ; out              ;
+; |factorial|process_0~162 ; |factorial|process_0~162 ; out              ;
+; |factorial|process_0~163 ; |factorial|process_0~163 ; out0             ;
+; |factorial|process_0~164 ; |factorial|process_0~164 ; out              ;
+; |factorial|process_0~165 ; |factorial|process_0~165 ; out              ;
+; |factorial|process_0~166 ; |factorial|process_0~166 ; out              ;
+; |factorial|process_0~167 ; |factorial|process_0~167 ; out              ;
+; |factorial|process_0~168 ; |factorial|process_0~168 ; out              ;
+; |factorial|process_0~169 ; |factorial|process_0~169 ; out              ;
+; |factorial|process_0~170 ; |factorial|process_0~170 ; out              ;
+; |factorial|process_0~171 ; |factorial|process_0~171 ; out              ;
+; |factorial|process_0~172 ; |factorial|process_0~172 ; out              ;
+; |factorial|process_0~173 ; |factorial|process_0~173 ; out              ;
+; |factorial|process_0~174 ; |factorial|process_0~174 ; out              ;
+; |factorial|process_0~175 ; |factorial|process_0~175 ; out              ;
+; |factorial|process_0~176 ; |factorial|process_0~176 ; out              ;
+; |factorial|process_0~177 ; |factorial|process_0~177 ; out              ;
+; |factorial|process_0~178 ; |factorial|process_0~178 ; out              ;
+; |factorial|process_0~179 ; |factorial|process_0~179 ; out              ;
+; |factorial|process_0~180 ; |factorial|process_0~180 ; out              ;
+; |factorial|process_0~181 ; |factorial|process_0~181 ; out              ;
+; |factorial|process_0~182 ; |factorial|process_0~182 ; out              ;
+; |factorial|process_0~183 ; |factorial|process_0~183 ; out              ;
+; |factorial|process_0~184 ; |factorial|process_0~184 ; out              ;
+; |factorial|process_0~185 ; |factorial|process_0~185 ; out              ;
+; |factorial|process_0~186 ; |factorial|process_0~186 ; out              ;
+; |factorial|process_0~187 ; |factorial|process_0~187 ; out              ;
+; |factorial|process_0~188 ; |factorial|process_0~188 ; out              ;
+; |factorial|process_0~189 ; |factorial|process_0~189 ; out              ;
+; |factorial|process_0~190 ; |factorial|process_0~190 ; out              ;
+; |factorial|process_0~191 ; |factorial|process_0~191 ; out              ;
+; |factorial|K[0]          ; |factorial|K[0]          ; out              ;
+; |factorial|K[1]          ; |factorial|K[1]          ; out              ;
+; |factorial|K[2]          ; |factorial|K[2]          ; out              ;
+; |factorial|K[3]          ; |factorial|K[3]          ; out              ;
+; |factorial|O[0]          ; |factorial|O[0]          ; pin_out          ;
+; |factorial|O[1]          ; |factorial|O[1]          ; pin_out          ;
+; |factorial|O[2]          ; |factorial|O[2]          ; pin_out          ;
+; |factorial|O[3]          ; |factorial|O[3]          ; pin_out          ;
+; |factorial|O[4]          ; |factorial|O[4]          ; pin_out          ;
+; |factorial|O[5]          ; |factorial|O[5]          ; pin_out          ;
+; |factorial|O[6]          ; |factorial|O[6]          ; pin_out          ;
+; |factorial|O[7]          ; |factorial|O[7]          ; pin_out          ;
+; |factorial|O[8]          ; |factorial|O[8]          ; pin_out          ;
+; |factorial|O[9]          ; |factorial|O[9]          ; pin_out          ;
+; |factorial|O[10]         ; |factorial|O[10]         ; pin_out          ;
+; |factorial|O[11]         ; |factorial|O[11]         ; pin_out          ;
+; |factorial|O[12]         ; |factorial|O[12]         ; pin_out          ;
+; |factorial|O[13]         ; |factorial|O[13]         ; pin_out          ;
+; |factorial|O[14]         ; |factorial|O[14]         ; pin_out          ;
+; |factorial|O[15]         ; |factorial|O[15]         ; pin_out          ;
+; |factorial|O[16]         ; |factorial|O[16]         ; pin_out          ;
+; |factorial|O[17]         ; |factorial|O[17]         ; pin_out          ;
+; |factorial|O[18]         ; |factorial|O[18]         ; pin_out          ;
+; |factorial|O[19]         ; |factorial|O[19]         ; pin_out          ;
+; |factorial|O[20]         ; |factorial|O[20]         ; pin_out          ;
+; |factorial|O[21]         ; |factorial|O[21]         ; pin_out          ;
+; |factorial|O[22]         ; |factorial|O[22]         ; pin_out          ;
+; |factorial|O[23]         ; |factorial|O[23]         ; pin_out          ;
+; |factorial|O[24]         ; |factorial|O[24]         ; pin_out          ;
+; |factorial|O[25]         ; |factorial|O[25]         ; pin_out          ;
+; |factorial|O[26]         ; |factorial|O[26]         ; pin_out          ;
+; |factorial|O[27]         ; |factorial|O[27]         ; pin_out          ;
+; |factorial|O[28]         ; |factorial|O[28]         ; pin_out          ;
+; |factorial|O[29]         ; |factorial|O[29]         ; pin_out          ;
+; |factorial|O[30]         ; |factorial|O[30]         ; pin_out          ;
+; |factorial|LessThan0~0   ; |factorial|LessThan0~0   ; out0             ;
+; |factorial|LessThan0~1   ; |factorial|LessThan0~1   ; out0             ;
+; |factorial|LessThan0~2   ; |factorial|LessThan0~2   ; out0             ;
+; |factorial|LessThan0~3   ; |factorial|LessThan0~3   ; out0             ;
+; |factorial|LessThan0~4   ; |factorial|LessThan0~4   ; out0             ;
+; |factorial|LessThan0~5   ; |factorial|LessThan0~5   ; out0             ;
+; |factorial|LessThan1~0   ; |factorial|LessThan1~0   ; out0             ;
+; |factorial|LessThan1~1   ; |factorial|LessThan1~1   ; out0             ;
+; |factorial|LessThan1~2   ; |factorial|LessThan1~2   ; out0             ;
+; |factorial|LessThan1~3   ; |factorial|LessThan1~3   ; out0             ;
+; |factorial|LessThan2~0   ; |factorial|LessThan2~0   ; out0             ;
+; |factorial|LessThan2~1   ; |factorial|LessThan2~1   ; out0             ;
+; |factorial|LessThan2~2   ; |factorial|LessThan2~2   ; out0             ;
+; |factorial|LessThan2~3   ; |factorial|LessThan2~3   ; out0             ;
+; |factorial|LessThan2~4   ; |factorial|LessThan2~4   ; out0             ;
+; |factorial|LessThan3~0   ; |factorial|LessThan3~0   ; out0             ;
+; |factorial|LessThan3~1   ; |factorial|LessThan3~1   ; out0             ;
+; |factorial|LessThan4~0   ; |factorial|LessThan4~0   ; out0             ;
+; |factorial|LessThan4~1   ; |factorial|LessThan4~1   ; out0             ;
+; |factorial|LessThan4~2   ; |factorial|LessThan4~2   ; out0             ;
+; |factorial|LessThan4~3   ; |factorial|LessThan4~3   ; out0             ;
+; |factorial|LessThan4~4   ; |factorial|LessThan4~4   ; out0             ;
+; |factorial|LessThan5~0   ; |factorial|LessThan5~0   ; out0             ;
+; |factorial|LessThan5~1   ; |factorial|LessThan5~1   ; out0             ;
+; |factorial|LessThan5~2   ; |factorial|LessThan5~2   ; out0             ;
+; |factorial|LessThan6~0   ; |factorial|LessThan6~0   ; out0             ;
+; |factorial|LessThan6~1   ; |factorial|LessThan6~1   ; out0             ;
+; |factorial|LessThan6~2   ; |factorial|LessThan6~2   ; out0             ;
+; |factorial|LessThan6~3   ; |factorial|LessThan6~3   ; out0             ;
+; |factorial|LessThan8~0   ; |factorial|LessThan8~0   ; out0             ;
+; |factorial|LessThan8~1   ; |factorial|LessThan8~1   ; out0             ;
+; |factorial|LessThan8~2   ; |factorial|LessThan8~2   ; out0             ;
+; |factorial|LessThan8~3   ; |factorial|LessThan8~3   ; out0             ;
+; |factorial|LessThan8~4   ; |factorial|LessThan8~4   ; out0             ;
+; |factorial|LessThan9~0   ; |factorial|LessThan9~0   ; out0             ;
+; |factorial|LessThan9~1   ; |factorial|LessThan9~1   ; out0             ;
+; |factorial|LessThan9~2   ; |factorial|LessThan9~2   ; out0             ;
+; |factorial|LessThan10~0  ; |factorial|LessThan10~0  ; out0             ;
+; |factorial|LessThan10~1  ; |factorial|LessThan10~1  ; out0             ;
+; |factorial|LessThan10~2  ; |factorial|LessThan10~2  ; out0             ;
+; |factorial|LessThan10~3  ; |factorial|LessThan10~3  ; out0             ;
+; |factorial|LessThan11~0  ; |factorial|LessThan11~0  ; out0             ;
+; |factorial|LessThan12~0  ; |factorial|LessThan12~0  ; out0             ;
+; |factorial|LessThan12~1  ; |factorial|LessThan12~1  ; out0             ;
+; |factorial|LessThan12~2  ; |factorial|LessThan12~2  ; out0             ;
+; |factorial|LessThan12~3  ; |factorial|LessThan12~3  ; out0             ;
+; |factorial|LessThan13~0  ; |factorial|LessThan13~0  ; out0             ;
+; |factorial|LessThan13~1  ; |factorial|LessThan13~1  ; out0             ;
+; |factorial|LessThan14~0  ; |factorial|LessThan14~0  ; out0             ;
+; |factorial|LessThan14~1  ; |factorial|LessThan14~1  ; out0             ;
+; |factorial|LessThan14~2  ; |factorial|LessThan14~2  ; out0             ;
++--------------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------+
+; Missing 1-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |factorial|O[31] ; |factorial|O[31] ; pin_out          ;
++------------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------+
+; Missing 0-Value Coverage                               ;
++------------------+------------------+------------------+
+; Node Name        ; Output Port Name ; Output Port Type ;
++------------------+------------------+------------------+
+; |factorial|O[31] ; |factorial|O[31] ; pin_out          ;
++------------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
+    Info: Processing started: Mon Aug 26 05:10:54 2019
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off factorial -c factorial
+Info: Using vector source file "C:/Users/admin/Desktop/66_67/exp_4/factorial/factorial.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      99.64 %
+Info: Number of transitions in simulation is 30816
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 138 megabytes
+    Info: Processing ended: Mon Aug 26 05:10:55 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

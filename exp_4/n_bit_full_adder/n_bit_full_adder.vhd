@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+use ieee.numeric_std.all;
+use ieee.std_logic_1164.all;
+
+Entity n_bit_full_adder is
+	generic(N : integer := 8);
+	  port (A,B: in std_ulogic_vector(N-1 downto 0);
+			Cin: in std_ulogic;
+			--Cout: out std_logic;
+			S: out std_ulogic_vector(N downto 0));
+end n_bit_full_adder;
+
+Architecture behave of n_bit_full_adder is
+begin	
+	process(A,B,Cin)
+		variable C1,C2: std_logic;
+		begin
+			C1 := Cin;
+			for i in 0 to N-1 loop
+				S(i) <= A(i) xor B(i) xor C1;
+				C2 := (A(i) and B(i)) or (C1 and (A(i) xor B(i))); 
+				C1 := C2;
+			end loop;
+			S(N) <= C1;
+	end process;	
+end behave ;
