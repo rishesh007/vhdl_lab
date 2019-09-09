@@ -1,0 +1,33 @@
+|n_bit_sipo
+l => process_0~0.IN0
+l => process_0~1.IN0
+r => process_0~1.IN1
+r => process_0~0.IN1
+clk => d[7].CLK
+clk => d[6].CLK
+clk => d[5].CLK
+clk => d[4].CLK
+clk => d[3].CLK
+clk => d[2].CLK
+clk => d[1].CLK
+clk => d[0].CLK
+rst => d~23.OUTPUTSELECT
+rst => d~22.OUTPUTSELECT
+rst => d~21.OUTPUTSELECT
+rst => d~20.OUTPUTSELECT
+rst => d~19.OUTPUTSELECT
+rst => d~18.OUTPUTSELECT
+rst => d~17.OUTPUTSELECT
+rst => d~16.OUTPUTSELECT
+d1 => d~15.DATAB
+dn => d~0.DATAB
+Q[0] <= d[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= d[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= d[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= d[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= d[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= d[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= d[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= d[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

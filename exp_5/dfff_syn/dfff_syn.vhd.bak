@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity dfff_syn is
+	port(clk, rst,D: in std_logic;
+		 Q: out std_logic);
+end dfff_syn;
+
+Architecture behaviour of dfff_syn is 
+Begin
+Process(clk)
+	Begin
+		if clk'event and clk = '1' then
+			if rst = '0' then
+				Q <= '0'
+			else Q <= D ;
+			end if;
+		else null;
+	 end if;
+end Process;
+end behaviour;

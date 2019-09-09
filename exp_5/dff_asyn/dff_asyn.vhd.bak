@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity dff_asyn is
+	port(clk, rst,D: in std_logic;
+		 Q: out std_logic);
+end dff_asyn;
+
+Architecture behaviour of dff_asyn is 
+Begin
+Process(clk,rst)
+	Begin
+	 if rst = '0' then
+		Q <= 0;
+	 elsif clk'event and clk = '1' then
+		Q <= D;
+	 else null;
+	 end if;
+end Process;
+end behaviour;

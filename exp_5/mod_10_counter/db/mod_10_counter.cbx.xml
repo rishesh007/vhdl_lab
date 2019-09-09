@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="mod_10_counter">
+		<CBX_INST_ENTRY INSTANCE_NAME="|mod_10_counter|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_3po.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
