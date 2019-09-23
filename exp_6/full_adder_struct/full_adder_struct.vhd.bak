@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity full_adder_struct is
+	port( cin, in1,in2: in bit;
+		  sum,cout : out bit);
+end full_adder_struct;
+
+Architecture struct of full_adder_struct is
+	
+	component HA
+	port(a,b : in bit;
+		s,c : out bit);
+	end component;
+	
+	component or1
+	port(x,y : in bit;
+		z : out bit);
+	end component;
+	
+	signal temp1,temp2,temp3 : bit;
+	begin
+		I1 : HA port map (in1,in2,temp1,temp2);
+		I2 : HA port map (temp1,cin,sum,temp3);
+		I3 : HA port map (temp2, temp3, cout);
+end struct;

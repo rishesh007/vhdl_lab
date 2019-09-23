@@ -1,0 +1,41 @@
+|shift_reg_struct
+w => dff1:D1.d
+clk => dff1:D4.clk1
+clk => dff1:D3.clk1
+clk => dff1:D2.clk1
+clk => dff1:D1.clk1
+rst => dff1:D4.rst1
+rst => dff1:D3.rst1
+rst => dff1:D2.rst1
+rst => dff1:D1.rst1
+dout <= dff1:D4.q
+
+
+|shift_reg_struct|dff1:D1
+d => q~reg0.DATAIN
+clk1 => q~reg0.CLK
+rst1 => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg_struct|dff1:D2
+d => q~reg0.DATAIN
+clk1 => q~reg0.CLK
+rst1 => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg_struct|dff1:D3
+d => q~reg0.DATAIN
+clk1 => q~reg0.CLK
+rst1 => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|shift_reg_struct|dff1:D4
+d => q~reg0.DATAIN
+clk1 => q~reg0.CLK
+rst1 => q~reg0.ACLR
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

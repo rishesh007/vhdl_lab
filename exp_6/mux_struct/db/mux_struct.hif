@@ -1,0 +1,94 @@
+Version 9.0 Build 132 02/25/2009 SJ Web Edition
+10
+767
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+mux_2_1
+# storage
+db|mux_struct.(1).cnf
+db|mux_struct.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_2_1.vhd
+296e84f230db7da87d92366c4ed71a21
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+mux_2_1:\L1:0:U1
+mux_2_1:\L1:1:U1
+mux_2_1:\L1:2:U1
+mux_2_1:\L1:3:U1
+mux_2_1:U2
+mux_2_1:U3
+mux_2_1:U4
+}
+# lmf
+..|..|..|..|..|..|altera|9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+mux_struct
+# storage
+db|mux_struct.(0).cnf
+db|mux_struct.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux_struct.vhd
+93b5f6ebffd1eb7f607950aaaa8e379
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|..|altera|9.0|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,75 @@
+|mux_struct
+W[0] => mux_2_1:L1:0:U1.I1
+W[1] => mux_2_1:L1:0:U1.I2
+W[2] => mux_2_1:L1:1:U1.I1
+W[3] => mux_2_1:L1:1:U1.I2
+W[4] => mux_2_1:L1:2:U1.I1
+W[5] => mux_2_1:L1:2:U1.I2
+W[6] => mux_2_1:L1:3:U1.I1
+W[7] => mux_2_1:L1:3:U1.I2
+sel[0] => mux_2_1:L1:3:U1.S
+sel[0] => mux_2_1:L1:2:U1.S
+sel[0] => mux_2_1:L1:1:U1.S
+sel[0] => mux_2_1:L1:0:U1.S
+sel[1] => mux_2_1:U3.S
+sel[1] => mux_2_1:U2.S
+sel[2] => mux_2_1:U4.S
+R <= mux_2_1:U4.y
+
+
+|mux_struct|mux_2_1:\L1:0:U1
+I1 => Y~0.IN1
+I2 => Y~1.IN1
+S => Y~1.IN0
+S => Y~0.IN0
+Y <= Y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_struct|mux_2_1:\L1:1:U1
+I1 => Y~0.IN1
+I2 => Y~1.IN1
+S => Y~1.IN0
+S => Y~0.IN0
+Y <= Y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_struct|mux_2_1:\L1:2:U1
+I1 => Y~0.IN1
+I2 => Y~1.IN1
+S => Y~1.IN0
+S => Y~0.IN0
+Y <= Y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_struct|mux_2_1:\L1:3:U1
+I1 => Y~0.IN1
+I2 => Y~1.IN1
+S => Y~1.IN0
+S => Y~0.IN0
+Y <= Y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_struct|mux_2_1:U2
+I1 => Y~0.IN1
+I2 => Y~1.IN1
+S => Y~1.IN0
+S => Y~0.IN0
+Y <= Y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_struct|mux_2_1:U3
+I1 => Y~0.IN1
+I2 => Y~1.IN1
+S => Y~1.IN0
+S => Y~0.IN0
+Y <= Y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_struct|mux_2_1:U4
+I1 => Y~0.IN1
+I2 => Y~1.IN1
+S => Y~1.IN0
+S => Y~0.IN0
+Y <= Y~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

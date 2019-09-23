@@ -1,0 +1,32 @@
+|full_adder_struct
+cin => HA:I2.b
+in1 => HA:I1.a
+in2 => HA:I1.b
+sum <= HA:I2.s
+cout <= or1:I3.z
+
+
+|full_adder_struct|HA:I1
+a => c~0.IN0
+a => s~0.IN0
+b => c~0.IN1
+b => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder_struct|HA:I2
+a => c~0.IN0
+a => s~0.IN0
+b => c~0.IN1
+b => s~0.IN1
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|full_adder_struct|or1:I3
+x => z~0.IN0
+y => z~0.IN1
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
