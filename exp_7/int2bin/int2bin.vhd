@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity int2bin is 
+port(x: in integer range 0 to 32;
+	 y: out std_logic_vector(7 downto 0)); 
+end int2bin;
+
+Architecture behave of int2bin is
+
+function bin(x: integer) return std_logic_vector is
+	variable z : std_logic_vector(7 downto 0);
+	variable y: integer := x ;
+	variable i: integer := 0;
+	begin 
+		while (y>0) loop
+			if y mod 2 = 0 then
+				z(i) := '0';
+			else
+				z(i) := '1';
+			end if;
+				y := y/2;
+			i := i+ 1;
+		end loop;
+	return z;
+end bin;
+
+begin
+	y <= bin(x);
+end behave;

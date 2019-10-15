@@ -1,0 +1,16 @@
+|int2bin
+x[0] => y[0].DATAIN
+x[1] => y[1].DATAIN
+x[2] => y[2].DATAIN
+x[3] => y[3].DATAIN
+x[4] => y[4].DATAIN
+x[5] => y[5].DATAIN
+y[0] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= x[2].DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+y[4] <= x[4].DB_MAX_OUTPUT_PORT_TYPE
+y[5] <= x[5].DB_MAX_OUTPUT_PORT_TYPE
+y[6] <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
