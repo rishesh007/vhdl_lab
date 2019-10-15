@@ -1,0 +1,85 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+
+entity shift_fpga is
+Port ( clk : in  STD_LOGIC;
+       rst : in  STD_LOGIC;
+       sir : in  STD_LOGIC;
+       sil : in  STD_LOGIC;
+       d : in  STD_LOGIC_VECTOR (3 downto 0);
+       q : out  STD_LOGIC_VECTOR (3 downto 0);
+       s : in  STD_LOGIC_VECTOR (1 downto 0));
+end shift_fpga;
+
+architecture Behavioral of shift_fpga is
+signal temp: std_logic_vector(3 downto 0);
+signal sclk,srst: std_logic;
+signal temp1: std_logic_vector(25 downto 0);
+Begin 
+Process(clk,rst)
+Begin
+	if clk'event and clk = '1' then
+		if rst ='1' then
+			temp1 <= (others => '0');
+			srst <= '1';
+		else
+			temp1 <= temp1 + 1;
+			sclk <= temp1(24);
+			
+			if temp1(25) = '1' then
+				srst <= '0';
+			else 
+				null;
+			end if;
+		end if;
+	end if;
+end Process;
+
+
+process(srst,sclk,s,d,sir,sil)
+
+    begin
+
+    if srst='1' then
+    temp<= "0000";
+    q<= "0000";
+
+    elsif (sclk='1' and sclk'event) then
+
+        case s is
+        -- PARALLEL LOAD 
+        when "11" =>
+        temp <= d;
+        q <= temp;
+
+        -- SHIFT LEFT       [0] [0] [0] [0]
+        --                  [0] [0] [0] [sil]
+        when "01" =>
+        temp <= d;
+        temp(3 downto 1) <= temp(2 downto 0);
+        temp(0) <= sil;
+        q <= temp;
+
+        -- SHIFT RIGHT      [0] [0] [0] [0]
+        --                [sir] [0] [0] [0]
+        when "10" => 
+        temp <= d;
+        temp(2 downto 0) <= temp(3 downto 1);
+        temp(3) <= sir;
+        q <= temp;
+
+        -- HOLD
+        when "00" =>
+        temp <= temp;
+        q <= temp;
+
+        when others => null;
+
+        end case;
+    end if;
+end process;    
+
+end Behavioral;

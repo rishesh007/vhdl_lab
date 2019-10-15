@@ -1,0 +1,44 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+entity counter_fpga is
+port (clk, rst: in std_logic;
+		cout: out std_logic_vector(3 downto 0));
+end counter_fpga;
+
+Architecture behave of counter_fpga is
+signal q: std_logic_vector(3 downto 0);
+signal sclk,srst: std_logic;
+signal temp: std_logic_vector(25 downto 0);
+Begin 
+Process(clk,rst)
+Begin
+	if clk'event and clk = '1' then
+		if rst ='1' then
+			temp <= (others => '0');
+			srst <= '1';
+		else
+			temp <= temp + "0000000000000000000000001";
+			sclk <= temp(24);
+			
+			if temp(25) = '1' then
+				srst <= '0';
+			else 
+				null;
+			end if;
+		end if;
+	end if;
+end Process;
+
+Process(sclk, srst)
+Begin
+	if sclk'event and sclk = '1' then
+		if srst ='1' then
+			q<= "0000";
+		else
+			q <= q + "0001";
+		end if;
+	end if;
+	cout <= q ;
+end process;
+end behave;
