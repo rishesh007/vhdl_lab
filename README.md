@@ -58,3 +58,18 @@ using FPGA
 - universal Shift Register
 
 Package not correct
+
+# Experiment 8:
+
+verilog 
+- full adder using dataflow
+- 3:8 decoder using **case**
+
+# Experiment 9:
+
+verilog structural modelling.
+- Full adder using two half adder and or gate
+- 4 bit full adder using 1 bit full adder
+ 
+
+
