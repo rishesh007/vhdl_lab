@@ -1,0 +1,11 @@
+|full_adder
+i1 => cout~1.IN0
+i1 => cout~0.IN0
+i2 => cout~1.IN1
+i2 => cout~0.IN1
+cin => cout~2.IN1
+cin => s~0.IN1
+cout <= cout~3.DB_MAX_OUTPUT_PORT_TYPE
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
