@@ -1,0 +1,61 @@
+|FA_using_1bitFA
+a[0] => a[0]~3.IN1
+a[1] => a[1]~2.IN1
+a[2] => a[2]~1.IN1
+a[3] => a[3]~0.IN1
+b[0] => b[0]~3.IN1
+b[1] => b[1]~2.IN1
+b[2] => b[2]~1.IN1
+b[3] => b[3]~0.IN1
+cin => cin~0.IN1
+sum[0] <= FA:f1.port4
+sum[1] <= FA:f2.port4
+sum[2] <= FA:f3.port4
+sum[3] <= FA:f4.port4
+cout <= FA:f4.port3
+
+
+|FA_using_1bitFA|FA:f1
+x => co~1.IN0
+x => co~0.IN0
+y => co~1.IN1
+y => co~0.IN1
+c => co~2.IN1
+c => s~0.IN1
+co <= co~3.DB_MAX_OUTPUT_PORT_TYPE
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA_using_1bitFA|FA:f2
+x => co~1.IN0
+x => co~0.IN0
+y => co~1.IN1
+y => co~0.IN1
+c => co~2.IN1
+c => s~0.IN1
+co <= co~3.DB_MAX_OUTPUT_PORT_TYPE
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA_using_1bitFA|FA:f3
+x => co~1.IN0
+x => co~0.IN0
+y => co~1.IN1
+y => co~0.IN1
+c => co~2.IN1
+c => s~0.IN1
+co <= co~3.DB_MAX_OUTPUT_PORT_TYPE
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FA_using_1bitFA|FA:f4
+x => co~1.IN0
+x => co~0.IN0
+y => co~1.IN1
+y => co~0.IN1
+c => co~2.IN1
+c => s~0.IN1
+co <= co~3.DB_MAX_OUTPUT_PORT_TYPE
+s <= s~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
