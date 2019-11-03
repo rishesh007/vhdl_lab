@@ -7,6 +7,8 @@ use ieee.std_logic_unsigned.all;
 use ieee.std_logic_arith.all;
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
+library Packages;
+use Packages.main.all;
 ```
 
 ### Experiment 1:
@@ -65,8 +67,6 @@ using function
 using FPGA
 - Counter
 - universal Shift Register
-
-Package not correct
 
 ### Experiment 8:
 

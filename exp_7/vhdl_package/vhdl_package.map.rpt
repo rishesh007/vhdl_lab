@@ -1,5 +1,5 @@
 Analysis & Synthesis report for vhdl_package
-Mon Sep 30 15:20:52 2019
+Sun Nov 03 23:51:42 2019
 Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
 
 
@@ -9,7 +9,11 @@ Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
   1. Legal Notice
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
-  4. Analysis & Synthesis Messages
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Analysis & Synthesis Messages
 
 
 
@@ -35,20 +39,20 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Sep 30 15:20:52 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 03 23:51:42 2019   ;
 ; Quartus II Version                 ; 9.0 Build 132 02/25/2009 SJ Web Edition ;
 ; Revision Name                      ; vhdl_package                            ;
 ; Top-level Entity Name              ; vhdl_package                            ;
 ; Family                             ; Cyclone III                             ;
-; Total logic elements               ; N/A until Partition Merge               ;
-;     Total combinational functions  ; N/A until Partition Merge               ;
-;     Dedicated logic registers      ; N/A until Partition Merge               ;
-; Total registers                    ; N/A until Partition Merge               ;
-; Total pins                         ; N/A until Partition Merge               ;
-; Total virtual pins                 ; N/A until Partition Merge               ;
-; Total memory bits                  ; N/A until Partition Merge               ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge               ;
-; Total PLLs                         ; N/A until Partition Merge               ;
+; Total logic elements               ; 0                                       ;
+;     Total combinational functions  ; 0                                       ;
+;     Dedicated logic registers      ; 0                                       ;
+; Total registers                    ; 0                                       ;
+; Total pins                         ; 14                                      ;
+; Total virtual pins                 ; 0                                       ;
+; Total memory bits                  ; 0                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                       ;
+; Total PLLs                         ; 0                                       ;
 +------------------------------------+-----------------------------------------+
 
 
@@ -129,22 +133,94 @@ applicable agreement for further details.
 +----------------------------------------------------------------+--------------------+--------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                     ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                        ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+
+; vhdl_package.vhd                 ; yes             ; User VHDL File  ; C:/Users/Rohit/Desktop/vhdl_lab/exp_7/vhdl_package/vhdl_package.vhd ;
+; main.vhd                         ; yes             ; User VHDL File  ; C:/Users/Rohit/Desktop/vhdl_lab/exp_7/vhdl_package/main.vhd         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+;                                             ;             ;
+; Total combinational functions               ; 0           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 0           ;
+;     -- 3 input functions                    ; 0           ;
+;     -- <=2 input functions                  ; 0           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 0           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 14          ;
+; Maximum fan-out node                        ; y[0]~output ;
+; Maximum fan-out                             ; 1           ;
+; Total fan-out                               ; 20          ;
+; Average fan-out                             ; 0.71        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |vhdl_package              ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |vhdl_package       ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
-    Info: Processing started: Mon Sep 30 15:20:50 2019
+    Info: Processing started: Sun Nov 03 23:51:41 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off vhdl_package -c vhdl_package
-Info: Found 2 design units, including 0 entities, in source file vhdl_package.vhd
-    Info: Found design unit 1: vhdl_package
-    Info: Found design unit 2: vhdl_package-body
-Error (10482): VHDL error at vhdl_package.vhd(5): object "std_logic_vector" is used but not declared File: C:/Users/admin/Desktop/66_67/exp_7/vhdl_package/vhdl_package.vhd Line: 5
-Error: Quartus II Analysis & Synthesis was unsuccessful. 1 error, 0 warnings
-    Error: Peak virtual memory: 210 megabytes
-    Error: Processing ended: Mon Sep 30 15:20:52 2019
-    Error: Elapsed time: 00:00:02
-    Error: Total CPU time (on all processors): 00:00:01
+Info: Found 2 design units, including 1 entities, in source file vhdl_package.vhd
+    Info: Found design unit 1: vhdl_package-behave
+    Info: Found entity 1: vhdl_package
+Info: Found 2 design units, including 0 entities, in source file main.vhd
+    Info: Found design unit 1: main
+    Info: Found design unit 2: main-body
+Info: Elaborating entity "vhdl_package" for the top level hierarchy
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "y[6]" is stuck at GND
+    Warning (13410): Pin "y[7]" is stuck at GND
+Info: Implemented 14 device resources after synthesis - the final resource count might be different
+    Info: Implemented 6 input pins
+    Info: Implemented 8 output pins
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 248 megabytes
+    Info: Processing ended: Sun Nov 03 23:51:42 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
